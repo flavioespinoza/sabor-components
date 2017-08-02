@@ -1,0 +1,22 @@
+{
+  "name": "swim-ot-app",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "flavioespinoza <flavio.espinoza@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/swimit/orbcomm-ot-app",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "c3": "*",
+    "edge-css": "*"
+  }
+}

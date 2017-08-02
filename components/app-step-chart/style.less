@@ -1,0 +1,246 @@
+@import "~styles/colors.less";
+
+x-app-step-chart {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: rgba(112, 158, 212, 0.50);
+
+    path.c3-bar {
+      fill-opacity: 0;
+      stroke-width: 0;
+    }
+    
+    x-swim-toggle {
+        display: inline-block;
+        position: absolute;
+        top: 9px;
+        left: 165px;   
+    }
+}
+
+
+.resolution-wrapper {
+    width: 46px;
+    height: 19px;
+    opacity: 0.9;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: #b7b7b7;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+}
+
+/* Text styles */
+
+.kpi-() {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    color: #709ed4;
+}
+
+.top-bar-title() {
+    font-family: Lato;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.pz-name() {
+    font-family: Lato;
+    font-size: 16px;
+    text-align: left;
+    color: @charcoal-grey;
+}
+
+.text-style-4() {
+    font-family: Lato;
+    font-size: 12px;
+    text-align: left;
+    color: @charcoal-grey;
+}
+
+.text-style-5() {
+    font-family: Lato;
+    font-size: 12px;
+    text-align: left;
+    color: #709ed4;
+}
+
+.text-style-6() {
+    font-family: Lato;
+    font-size: 12px;
+    text-align: right;
+    color: @purpley-grey;
+}
+
+.text-style-7() {
+    font-family: Lato;
+    font-size: 12px;
+    text-align: left;
+    color: @warm-grey;
+}
+
+.text-style-3() {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    color: @charcoal-grey;
+}
+
+
+/* How to use mixins
+ *   .myClass {
+ *     .KPI-()
+ *   }
+ */
+
+
+
+.step-title {
+    font-size: 16px;
+    color: #4a4a4a;
+    font-weight: 300;
+}
+
+.step-title-toggle {
+    font-size: 16px;
+    color: #4a4a4a;
+    font-weight: 300;
+    position: absolute;
+    top: 12px;
+    left: 211px;
+}
+
+.active {
+    color: #767676;
+    font-weight: normal;
+}
+
+.chart-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+    form {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.chart {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #9B9B9B;
+    font-weight: 300;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+
+@line-color: #709ed4; //blue
+
+svg text {
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    fill: @purpley-grey;
+    font-size: 10px;
+}
+
+.line {
+    fill: none;
+    stroke: @line-color;
+    stroke-width: 3px;
+}
+
+.path-fill {
+    fill: #F0F5FA;
+    stroke: none;
+}
+
+.axis{
+    & .domain {
+        fill: none;
+    }
+
+    & .tick line {
+        stroke: #EEE;
+        stroke-width: 1px;
+    }
+}
+
+.tooltip {
+    &-line {
+        fill: none;
+        stroke: @dark-sky-blue;
+        stroke-width: 1px;
+        stroke-dasharray: 3px;
+    }
+
+    &-point {
+        fill: @dark-sky-blue;
+        stroke: @dark-sky-blue;
+        stroke-width: 1px;
+    }
+}
+
+.step-chart-tooltip {
+    position: absolute;
+    width: 242px;
+    overflow: hidden;
+    z-index: 1000;
+    border-top: 4px solid @dark-sky-blue;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+
+
+    .tooltip-title {
+        .text-style-4()
+    }
+
+    .device-down {
+        .text-style-3();
+        list-style: none;
+        padding: 0;
+    }
+
+    .foo-danger {
+        font-family: FontAwesome;
+        font-style: normal;
+        color: @darkish-pink;
+        float: left;
+    }
+
+    .start-date, .end-date {
+        font-family: Lato;
+        font-size: 10px;
+        text-align: left;
+        color: #cacaca;
+    }
+}
+
+.tooltip-warning {
+    border-top: 2px solid @darkish-pink;
+}
+
+
+.avg-line {
+    fill: none;
+    stroke: @line-color;
+    stroke-width: 1px;
+    stroke-dasharray: 5px;
+}

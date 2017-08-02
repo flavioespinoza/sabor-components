@@ -1,0 +1,26 @@
+<div class="location pointer location-btn" location="<%= location %>" url="<%= url %>">
+ <div class="location-wrapper no-pointer">
+ 	<button class="no-pointer list-btn mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored fl">
+ 	<% if(icon != 'reader_icon') { %>
+ 		<i class="material-icons no-pointer"><%= icon %></i>
+ 	<% } else {%>
+ 		<i class="swim-icon reader-icon"></i>
+    <% } %>
+ 	</button> 
+ 	<div class="title fl pl12 no-pointer"><%= location %></div>
+ 	<div class="status">
+     	<% if(icon != 'reader_icon') { %>
+            Online
+        <% } else {%>
+            Connected
+        <% } %>
+        <% if(disconnects > 0 ) {%>
+            <div style="margin-left: 19px;display:inline-block;"><i class="material-icons">error</i> <span><%= disconnects %></span></div>
+        <% } %>
+        <% if(inactivity > 0 ) {%>
+            <div style="margin-left: 14px;display:inline-block;"><i class="material-icons">warning</i> <span><%= inactivity %></span></div>
+        <% } %>
+ 	</div>
+ 	<i class="arrow_right material-icons black fr mt20 no-pointer">keyboard_arrow_right</i>
+ </div>
+</div>

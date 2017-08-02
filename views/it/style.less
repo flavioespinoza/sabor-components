@@ -1,0 +1,172 @@
+ @sandy: #f6ed7c;
+@light-gray: #d6d6d6;
+@faded-blue: #709ed4;
+@dark-sky-blue: #5a9ae3;
+@off-yellow: #f0e124;
+@macaroni-and-cheese: #f6b13f;
+@darkish-pink: #e05d74;
+@faded-red: #ca3649;
+@warm-grey: #767676;
+@greyish: #b5b5b5;
+@pinkish-grey: #cacaca;
+@light-grey: #dfdfdf;
+@lightest-grey: #ebebeb;
+
+/* Text styles */
+
+.top-bar-title() {
+    font-family: Lato;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.pz-name() {
+    font-family: Lato;
+    font-size: 16px;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+.text-style-4() {
+    font-family: Lato;
+    font-size: 12px;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+.text-style-5() {
+    font-family: Lato;
+    font-size: 12px;
+    text-align: left;
+    color: @faded-blue;
+}
+
+.text-style-6() {
+    font-family: Lato;
+    font-size: 12px;
+    text-align: right;
+    color: #9b9b9b;
+}
+
+.text-style-7() {
+    font-family: Lato;
+    font-size: 12px;
+    text-align: left;
+    color: @warm-grey;
+}
+
+.text-style-3() {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    color: #4a4a4a;
+}
+
+
+/* How to use mixins
+ *   .myClass {
+ *     .Top-Bar-Title()
+ *   }
+ */
+
+
+#orbcommIT {
+    position: relative;
+    height: 100%;
+    width: 1920px !important;
+    .it-wrapper {
+        width: 1920px !important;
+        height: 100%;
+    }
+    .left-nav {
+        width: calc(~'(20% - 6px)');
+        padding-right: 6px;
+        height: 100%;
+        float: left;
+    }
+    .middle-charts {
+        width: calc(~'(100% - 35%)');
+        height: calc(~'(100% - 60px)');
+        float: left;
+        overflow: visible;
+        //background: pink;
+
+        .header-bar {
+            width: calc(~'(100% - 12px)');
+            height: 48px;
+            padding: 6px;
+            float: left;
+            //background: lightsteelblue;
+            .mdl-button--fab.mdl-button--colored {
+                background: #709ed4;
+                color: #fff;
+            }
+        }
+        .donut-chart-wrapper {
+            width: calc(~'(50% - 12px)');
+            padding: 6px;
+            float: left;
+        }
+        #allZones {
+            width: 100%;
+            height: 100%;
+            .connectivity {
+                width: calc(~'(100% - 12px)');
+                height: 350px;
+                padding: 6px;
+                float: left;
+                //background: cadetblue;
+                .chart {
+                    width: 100%;
+                    height: 306px;
+                }
+            }
+        }
+
+        #singleZone {
+            width: 100%;
+            height: 100%;
+            //background: pink;
+            .connectivity {
+                width: calc(~'(100% - 12px)');
+                height: 600px;
+                padding: 6px;
+                float: left;
+                //background: cadetblue;
+                .chart {
+                    width: 1236px;
+                    height: 554px;
+                }
+            }
+        }
+
+        #singleReader {
+            width: 100%;
+            height: 100%;
+            //background: pink;
+            .connectivity {
+                width: 100%;
+                height: 550px;
+                padding: 6px;
+                float: left;
+                //background: cadetblue;
+                .chart {
+                    width: 1236px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+    .right-kpi {
+        height: 100%;
+        width: calc(~'(15% - 12px)');
+        float: left;
+        padding: 6px;
+        //background-color: lightgreen;
+    }
+    .opacity-15 {
+        opacity: .15;
+    }
+}

@@ -1,0 +1,5 @@
+module.exports = {
+  'SET_RESOLUTION': 'SET_RESOLUTION',
+  'SET_PZ_ID': 'SET_PZ_ID',
+  'SET_READER_ID': 'SET_READER_ID'
+}

@@ -1,0 +1,11 @@
+module.exports = {
+  'NAV_SELECTION': 'NAV_SELECTION',
+
+  'GET_PZS': 'GET_PZS',
+  'SET_PZS': 'SET_PZS',
+  'SET_PZ_ID': 'SET_PZ_ID',
+
+  'GET_READERS': 'GET_READERS',
+  'SET_READERS': 'SET_READERS',
+  'SET_READER_ID': 'SET_READER_ID'
+}

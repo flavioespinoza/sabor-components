@@ -1,0 +1,3 @@
+module.exports = {
+  'TOGGLE_CHART_DISPLAY': 'TOGGLE_CHART_DISPLAY'
+}

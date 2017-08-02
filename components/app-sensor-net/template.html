@@ -1,0 +1,59 @@
+<div class="w100 h100 pl48 pr48">
+    <div id="sensorNet" class="mdl-card mdl-shadow--2dp pl24 pt12">
+
+        <h4 id="sensorNetTitle"> <i class="material-icons pr6">cloud</i> SensorNet</h4>
+
+        <div class="top-row p6">
+
+            <div class="sensor-net-cards">
+
+            </div>
+
+            <div class="sensor-net-info">
+
+                <div class="w100 pb24">
+                    <div class="sensor-net-info-row">SensorNets: <div id="sensorNets" class="sensor-nets"></div></div>
+                    <div class="sensor-net-info-row">Process Zones: <div id="processZones" class="sensor-nets right"></div></div>
+                </div>
+
+                <div class="w100 pb12">
+                    <div class="sensor-net-info-row">Primaries Connected: <div id="primariesConnected" class="sensor-nets"></div></div>
+                    <div class="sensor-net-info-row">Queue Length: <div id="queueLength" class="sensor-nets"></div></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="middle-row">
+            <x-app-sensor-net-donut data-title="Log Events"
+                                    data-lane="eventLogStatusCounts"></x-app-sensor-net-donut>
+
+            <x-app-sensor-net-donut data-title="Event Notification"
+                                    data-lane="eventNotificationStatusCounts"></x-app-sensor-net-donut>
+
+            <x-app-sensor-net-donut data-title="Jobs"
+                                    data-lane="jobStatusEventCounts"></x-app-sensor-net-donut>
+
+        </div>
+
+
+
+        <div class="bottom-row w100">
+
+            <x-swim-events-chart data-chart-title="Event Logs"
+                                 data-x-axis="false"></x-swim-events-chart>
+
+            <x-swim-events-chart data-chart-title="Event Notifications"
+                                 data-x-axis="false"></x-swim-events-chart>
+
+            <x-swim-events-chart data-chart-title="Jobs"
+                                 data-x-axis="true"></x-swim-events-chart>
+
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,40 @@
+x-app-resolution-bar {
+    .time-bar {
+        font-size: 12px;
+        font-weight: 300;
+        color: #9b9b9b;
+        display: inline-block;
+        margin-top: 10px;
+        float: right;
+        .date {
+            display: block;
+        }
+    }
+    .resolution-selector {
+        float: right;
+        ol {
+          margin-top: 0;
+          -webkit-margin-before: 0px;
+          -webkit-padding-start: 8px;
+        }
+        li {
+            cursor: pointer;
+            float: left;
+            margin: 3px;
+            text-align: center;
+            list-style: none;
+            font-size: 18px;
+            line-height: 50px;
+            opacity: 0.81;
+            background-color: #d6d6d6;
+            width: 48px;
+            height: 48px;
+            opacity: 0.9;
+            &.selected {
+                background-color: #709ed4;
+                color: #ffffff;
+                box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}

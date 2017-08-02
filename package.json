@@ -1,0 +1,48 @@
+{
+  "name": "Flavio's Epic Shit",
+  "title": "Real-Time Websocket App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "swimAppId": "2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "org" : "country/us",
+    "endPoints": {
+        "host": "ws://city.swim.services"
+    },
+    "print_url" : {
+        "org" : "",
+        "pz" : "",
+        "reader": ""
+    }
+  },
+  "standard": {
+    "globals": [
+      "$",
+      "jQuery",
+      "Swim",
+      "Recon",
+      "_",
+      "tag",
+      "__material__",
+      "__swimModule__",
+      "__fontawesome__",
+      "Router",
+      "Script",
+      "dialogPolyfill",
+      "Store",
+      "Dispatcher",
+      "moment",
+      "Draw",
+      "Lawnchair",
+      "d3",
+      "c3",
+      "debug"
+    ]
+  }
+}

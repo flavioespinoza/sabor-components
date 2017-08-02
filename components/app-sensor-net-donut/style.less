@@ -1,0 +1,47 @@
+x-app-sensor-net-donut {
+    .sensor-net-donut {
+        position: relative;
+        //width: ~"calc(30% - 8px)";
+        width: 33%;
+        height: 200px;
+        float: left;
+        //background: rgba(92, 144, 226, 0.41);
+
+        .sensor-net-info-row {
+            width: 100%;
+            .sensor-nets {
+                padding-right: 0px;
+                text-align: right;
+            }
+        }
+        .sensor-net-info {
+            top: 64px;
+        }
+    }
+
+    .chart {
+        position: absolute;
+        top: 36px;
+        left: 20%;
+        width: 150px;
+        height: 150px;
+    }
+    .donut-title {
+        position: absolute;
+        top: 182px;
+        width: 150px;
+        left: 20%;
+        font-size: 13px;
+        text-align: center;
+
+    }
+
+    .download-log {
+        cursor: pointer;
+        text-decoration: underline;
+        &:hover {
+            color: cornflowerblue;
+        }
+    }
+}
+

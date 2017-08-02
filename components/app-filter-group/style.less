@@ -1,0 +1,28 @@
+x-app-filter-group {
+    ol {
+        -webkit-padding-start: 0;
+        padding: 0;
+        margin-top: 8px;
+    }
+    li {
+        color: #333;
+        list-style: none;
+        float: left;
+        margin-left: 20px;
+        &:before {
+            content: '';
+            background-color: #f1ad0f;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 20px;
+            margin-right: 5px;
+        }
+        span {
+            font-size: 1.2em;
+            color: #888;
+            top: -5px;
+            position: relative;
+        }
+    }
+}

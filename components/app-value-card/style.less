@@ -1,0 +1,153 @@
+x-app-value-card {
+    &:first-of-type {
+      margin-top: 0;      
+    }
+    
+    
+    height: 24%;
+    margin-top: 8px;
+    display: block;
+    .app-graph-card {
+        height: 97%;
+        width: 100%;
+        min-height: 0px;
+        z-index: 0;
+        x-mdl-progress-bar {
+            position: absolute;
+            bottom: 0;
+            height: 10px;
+        }
+    }
+    x-swim-line-chart {
+        position: absolute;
+        bottom: 12px;
+        height: 20%;
+    }
+    .title-icon {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .title {
+        width: 127.4px;
+        height: 19px;
+        opacity: 0.9;
+        font-family: Lato;
+        font-size: 16px;
+        text-align: left;
+        color: #4a4a4a;    
+    }
+    .delta {
+          width: 46px;
+          height: 19px;
+          opacity: 0.9;
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 300;
+          text-align: center;
+          color: #b7b7b7;
+          position: absolute;
+          right: 8px;
+          top: 16px;
+    }
+    .delta-icon {
+        font-size: 58px;
+        display: block;
+        line-height: 35px;
+    }
+    .stats {
+        display: block;
+        position: absolute;
+        top: 30%;
+        line-height: normal;
+        width: 100%;
+        text-align: center;
+        .labels {
+            list-style: none;
+            float: left;
+            padding: 0;
+        }
+        .values {
+            list-style: none;
+            float: right;
+            padding: 0;
+        }
+    }
+    .connected {
+        font-weight: lighter;
+        display: block;
+        text-align: center;
+        height: 50px;   
+        opacity: 0.9;
+        font-family: Lato;
+        font-size: 64px;
+        font-weight: 300;
+        text-align: center;
+        color: #709ed4;
+    }
+    .sub-title {
+        display: block;
+        width: 102px;
+        height: 19px;
+        opacity: 0.9;
+        font-family: Lato;
+        font-size: 16px;
+        text-align: right;
+        color: #709ed4;
+        margin-left: 115px;
+        margin-top: 20px;
+    }
+    .by-line {
+      opacity: 0.9;
+      font-family: Lato;
+      font-size: 16px;
+      text-align: left;
+      color: #709ed4;
+      bottom: 30px;
+      text-indent: 26px;
+      position: absolute;
+    }
+    .material-icons.fiber {
+      font-size: 14px;
+      opacity: 0.9;
+      color: #709ed4;
+      
+    }
+    .mdl-progress>.bufferbar, .mdl-progress>.bufferbar {
+      background-color: #709ed4;   
+      background-image: none; 
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+   x-app-value-card {
+    .title {
+        width: 127.4px;
+        height: 19px;
+        font-size: 12px; 
+    }
+    .mdl-card__supporting-text {
+        padding: 8px 8px;
+    }
+     .sub-title {
+        font-size: 12px;
+        margin-left: 55px;
+    }
+    .by-line {
+      font-size: 12px;
+      text-indent: 20px;
+    }
+    .delta {
+        font-size: 12px;
+        top: 9px;
+    }
+    .stats {
+        top: 23%;
+    }
+    .connected {
+        font-size: 48px;    
+    }
+    
+   }
+}

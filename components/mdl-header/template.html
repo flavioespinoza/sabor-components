@@ -1,0 +1,20 @@
+<!-- Always shows a header, even in smaller screens. -->
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <x-app-search></x-app-search>
+      <!-- Navigation. We hide it in small screens. -->
+      <x-app-filter-group></x-app-filter-group>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+         <a href="" style="background-color:#ffc107;height: 40px;min-width: 40px;width: 40px;" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+          <i class="material-icons">bubble_chart</i>
+        </a>
+        <a href="" style="background-color:#709ed4;height: 40px;min-width: 40px;width: 40px; margin-left:15px;" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+          <i class="material-icons">share</i>
+        </a>
+      </nav>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <x-app-resolution-bar></x-app-resolution-bar>
+    </div>
+  </header>

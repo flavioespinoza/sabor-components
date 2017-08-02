@@ -1,0 +1,42 @@
+@import "~styles/colors.less";
+
+x-swim-toggle {
+
+.mdl-switch.is-checked .mdl-switch__thumb {
+    background: @almost-white;
+    left: 22px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdl-switch__thumb {
+    background: rgb(250,250,250);
+    position: absolute;
+    left: 0;
+    top: 6px;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition-duration: 0.28s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: left;
+}
+
+.mdl-switch__track {
+    background: #cacaca;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    height: 17px;
+    width: 36px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.mdl-switch.is-checked .mdl-switch__track {
+    background: #cacaca;
+}
+
+
+}

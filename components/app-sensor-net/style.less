@@ -1,0 +1,100 @@
+x-app-sensor-net {
+    z-index: 100;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    color: #939393;
+    #sensorNet {
+        width: ~"calc(100% - 96px)";
+        min-width: 1344px;
+
+    }
+
+    @media ( max-height: 800px ){
+        #sensorNet {
+            max-height: 726px;
+
+        }
+    }
+
+    #sensorNetTitle {
+        color: #709ED4;
+        i {
+            font-size: 32px;
+        }
+    }
+
+    .top-row, .middle-row {
+        position: relative;
+        width: ~"calc(100% - 48px)";
+        height: 180px;
+        //background: pink;
+    }
+
+    .middle-row {
+        height: 240px;
+        //background: rgba(255, 0, 0, 0.33);
+    }
+
+    .sensor-net-card {
+        position: relative;
+        width: 130px;
+        height: 160px;
+        border: 1px solid white;
+        background-color: #709ED4;
+        color: white;
+        border-radius: 12px;
+        float: left;
+        margin-right: 24px;
+    }
+
+    .sensor-net-title,
+    .sensor-net-sub-title {
+        margin: 12px;
+        font-size: 13px;
+    }
+
+    .sensor-net-count {
+        font-size: 72px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 26px;
+    }
+
+    .sensor-net-sub-title {
+        position: absolute;
+        bottom: 0px;
+        right: 12px;
+    }
+    .sensor-net-cards {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 160px;
+        //background: lightgreen;
+    }
+    .sensor-net-info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 160px;
+        //background: lightsteelblue;
+        .w100 {
+            height: 12px;
+            font-size: 13px;
+        }
+    }
+
+    .sensor-net-info-row {
+        width: 50%;
+        float: left;
+        .sensor-nets {
+            float: right;
+            padding-right: 48px;
+        }
+    }
+}
+
