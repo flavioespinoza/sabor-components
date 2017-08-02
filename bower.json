@@ -1,12 +1,12 @@
 {
-  "name": "swim-ot-app",
+  "name": "sabor-components",
   "description": "",
   "main": "index.js",
   "authors": [
     "flavioespinoza <flavio.espinoza@gmail.com>"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/swimit/orbcomm-ot-app",
+  "license": "MIT",
+  "homepage": "https://github.com/flavioespinoza/sabor-components",
   "private": true,
   "ignore": [
     "**/.*",

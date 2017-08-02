@@ -1,2 +1,2 @@
-# the-flavor
-Beautiful shit I've built
+# sabor-components
+Web components built using x-tag utilizing the Flux method.
